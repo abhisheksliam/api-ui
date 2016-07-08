@@ -28,12 +28,12 @@
         url = decodeURIComponent(url[1]);
       } else {
         var url1 = window.location.search
+		if(url1.indexOf('?') === -1){
+		url = "http://petstore.swagger.io/v2/swagger.json";
+		}else{
 		var getQuery = url1.split('?')[1]
 		var params = getQuery.split('&')
-		if(params){
 		url = params[0]
-		}else{
-		url = "http://petstore.swagger.io/v2/swagger.json";
 		}
       }
       window.swaggerUi = new SwaggerUi({
