@@ -17,7 +17,8 @@
     "start": "node index.js"
   },
   "readmeFilename": "README.md",
-  "devDependencies": {
+  "dependencies": {
+    "bower": "1.7.6",
     "chai": "^2.1.0",
     "cors": "^2.5.3",
     "docco": "^0.7.0",
